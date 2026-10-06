@@ -1,0 +1,76 @@
+# Spam Email Detection Using Machine Learning
+
+## Project Overview
+
+This project is a machine learning based Spam Email Detection system. 
+It classifies a text message as either **Spam** or **Ham (Not Spam)**.
+
+The project uses the SMS Spam Collection dataset and a Multinomial Naive Bayes
+machine learning algorithm.
+
+## Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- TF-IDF
+- Multinomial Naive Bayes
+- Streamlit
+- Google Colab
+
+## Dataset
+
+The project uses the SMS Spam Collection dataset.
+
+The dataset contains text messages labelled as:
+
+- Ham – legitimate messages
+- Spam – unwanted or promotional messages
+
+## Machine Learning Process
+
+The following steps were followed:
+
+1. Load the dataset
+2. Check and remove duplicate data
+3. Convert labels into numerical values
+4. Split the dataset into training and testing data
+5. Convert text into numerical features using TF-IDF
+6. Train the Multinomial Naive Bayes model
+7. Test the model
+8. Calculate the accuracy and classification metrics
+9. Create a simple Streamlit application for prediction
+
+## Model Used
+
+### Multinomial Naive Bayes
+
+Multinomial Naive Bayes is used because it works well with text classification
+problems.
+
+## Results
+
+The model achieved an accuracy of approximately **95.84%** on the test dataset.
+
+The model was also tested with new messages through the Streamlit application.
+
+## Application
+
+The Streamlit application allows the user to enter a message and check whether
+it is classified as Spam or Ham.
+
+## Project Files
+
+- `app.py` – Streamlit application
+- `Spam_Email_Detection.ipynb` – Complete machine learning notebook
+- `spam_model.pkl` – Trained machine learning model
+- `tfidf_vectorizer.pkl` – Saved TF-IDF vectorizer
+- `spam_dataset.tsv` – Dataset
+
+## How to Run
+
+Install the required libraries:
+
+```bash
+pip install pandas numpy scikit-learn streamlit joblib
